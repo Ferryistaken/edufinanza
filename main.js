@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 // Torus
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+const material = new THREE.MeshStandardMaterial({ color: 0x5facb8 });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -60,12 +60,12 @@ Array(300).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/img/space2.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const blockTexture = new THREE.TextureLoader().load('/assets/placeholder-635x635.jpg');
+const blockTexture = new THREE.TextureLoader().load('/img/placeholder-635x635.jpg');
 
 const block = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: blockTexture }));
 
@@ -73,8 +73,8 @@ scene.add(block);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('/img/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/img/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -88,16 +88,24 @@ scene.add(moon);
 
 // Bitcoin
 
-// const btcTexture = new THREE.TextureLoader().load('/assets/btc.png');
+// const btcTexture = new THREE.TextureLoader().load('/img/btc.png');
 // const btc = new THREE.Mesh(THREE.CylinderGeometry( 6, 6, 1, 32 ), new THREE.MeshBasicMaterial({ map: btcTexture }));
 
 // scene.add(btc);
+
+const cylinderGeometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+const cylinderMaterial = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+const cylinder = new THREE.Mesh( geometry, material );
+// scene.add( cylinder );
 
 moon.position.z = 30;
 moon.position.setX(-10);
 
 block.position.z = -5;
 block.position.x = 2;
+
+cylinder.position.z = -5;
+cylinder.position.x = 2;
 
 // btc.position.z = -7;
 // btc.position.x = 4;
@@ -112,6 +120,9 @@ function moveCamera() {
 
   block.rotation.y += 0.01;
   block.rotation.z += 0.01;
+
+  cylinder.rotation.y += 0.01;
+  cylinder.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
