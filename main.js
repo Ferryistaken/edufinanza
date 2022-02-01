@@ -25,7 +25,7 @@ const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({ color: 0x5facb8 });
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// scene.add(torus);
 
 // Lights
 
@@ -93,19 +93,20 @@ scene.add(moon);
 
 // scene.add(btc);
 
-const cylinderGeometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+const cylinderGeometry = new THREE.CylinderGeometry( 7, 7, 1.5, 32 );
 const cylinderMaterial = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-const cylinder = new THREE.Mesh( geometry, material );
-// scene.add( cylinder );
+const cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
+scene.add( cylinder );
 
 moon.position.z = 30;
+moon.position.y = 5;
 moon.position.setX(-10);
 
 block.position.z = -5;
 block.position.x = 2;
 
-cylinder.position.z = -5;
-cylinder.position.x = 2;
+cylinder.position.z = 50;
+cylinder.position.setX(-50);
 
 // btc.position.z = -7;
 // btc.position.x = 4;
