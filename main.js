@@ -61,7 +61,7 @@ Array(300).fill().forEach(addStar);
 // Background
 
 const spaceTexture = new THREE.TextureLoader().load('/img/space2.jpg');
-scene.background = spaceTexture;
+// scene.background = spaceTexture;
 
 
 // School Logo
