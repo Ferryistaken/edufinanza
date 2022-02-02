@@ -66,14 +66,14 @@ const spaceTexture = new THREE.TextureLoader().load('/img/space2.jpg');
 
 // School Logo
 
-const schoolBlockTexture = new THREE.TextureLoader().load('/img/school-logo.jpeg');
+const schoolBlockTexture = new THREE.TextureLoader().load('/img/school-logo2.jpg');
 
 const schoolBlock = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: schoolBlockTexture }));
 
 scene.add(schoolBlock);
 
 // Bank Logo
-const bankBlockTexture = new THREE.TextureLoader().load('/img/banca-logo.png');
+const bankBlockTexture = new THREE.TextureLoader().load('/img/banca-logo-transparent.png');
 
 const bankBlock = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: bankBlockTexture }));
 
@@ -127,9 +127,9 @@ cylinder.position.setX(-50);
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
+  // moon.rotation.x += 0.05;
+  // moon.rotation.y += 0.075;
+  // moon.rotation.z += 0.05;
 
   schoolBlock.rotation.y += 0.01;
   schoolBlock.rotation.z += 0.01;
