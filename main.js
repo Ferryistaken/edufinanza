@@ -63,13 +63,21 @@ Array(300).fill().forEach(addStar);
 const spaceTexture = new THREE.TextureLoader().load('/img/space2.jpg');
 scene.background = spaceTexture;
 
-// Avatar
 
-const blockTexture = new THREE.TextureLoader().load('/img/placeholder-635x635.jpg');
+// School Logo
 
-const block = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: blockTexture }));
+const schoolBlockTexture = new THREE.TextureLoader().load('/img/school-logo.jpeg');
 
-scene.add(block);
+const schoolBlock = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: schoolBlockTexture }));
+
+scene.add(schoolBlock);
+
+// Bank Logo
+const bankBlockTexture = new THREE.TextureLoader().load('/img/banca-logo.png');
+
+const bankBlock = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: bankBlockTexture }));
+
+scene.add(bankBlock);
 
 // Moon
 
@@ -102,8 +110,12 @@ moon.position.z = 30;
 moon.position.y = 5;
 moon.position.setX(-10);
 
-block.position.z = -5;
-block.position.x = 2;
+schoolBlock.position.z = -5;
+schoolBlock.position.x = 2;
+
+bankBlock.position.z = 5;
+bankBlock.position.x = -10;
+bankBlock.position.y = 7;
 
 cylinder.position.z = 50;
 cylinder.position.setX(-50);
@@ -119,8 +131,11 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  block.rotation.y += 0.01;
-  block.rotation.z += 0.01;
+  schoolBlock.rotation.y += 0.01;
+  schoolBlock.rotation.z += 0.01;
+
+  bankBlock.rotation.y += 0.01;
+  bankBlock.rotation.z += 0.01;
 
   cylinder.rotation.y += 0.01;
   cylinder.rotation.z += 0.01;
