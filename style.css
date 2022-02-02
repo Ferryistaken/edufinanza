@@ -6,6 +6,15 @@ canvas {
   left: 0;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 :root {
   --dark-bg: #00000065;
@@ -35,7 +44,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 5vw;
-  font-style: normal;
+  font-style: italic;
 }
 
 h2, h3, blockquote {
