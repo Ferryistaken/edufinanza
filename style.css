@@ -40,6 +40,10 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+a {
+  color: #729D9E;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
