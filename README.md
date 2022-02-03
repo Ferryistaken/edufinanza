@@ -1,4 +1,4 @@
-# [Edufinanza](https://edufinanza.netlify.app)
+# [Edufinanza](https://edufinanza.netlify.app){:target="_blank"}
 
 This website was created as part of a formative project with Banca d'Italia (The central bank of Italy).
 

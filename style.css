@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
+#subtitle {
+  background-color: transparent;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -115,6 +119,9 @@ canvas {
 
 /* MOBILE */
 @media (max-width: 1000px) {
+#subtitle {
+  background-color: transparent;
+}
   canvas {
     position: fixed;
     top: 0;
