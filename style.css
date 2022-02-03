@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
-#subtitle {
+#subtitle, #toc {
   background-color: transparent;
 }
+
+
 
 canvas {
   position: fixed;
@@ -13,12 +15,12 @@ canvas {
 
 html, body {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
   background: black no-repeat center center fixed;
   background-size: cover;
-
 }
 
 *::-webkit-scrollbar {
@@ -48,7 +50,7 @@ main {
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 30vw 0px;
+  padding: 20vw 0px;
 
   
   display: grid;
@@ -124,7 +126,7 @@ canvas {
 
 /* MOBILE */
 @media (max-width: 1000px) {
-#subtitle {
+#subtitle, #toc {
   background-color: transparent;
 }
   canvas {
