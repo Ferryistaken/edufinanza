@@ -1,7 +1,8 @@
-# Scrollable 3D Animation with Three.js
-## PCTO Project
+# [Edufinanza](https://edufinanza.netlify.app)
 
-- [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet
+This website was created as part of a formative project with Banca d'Italia (The central bank of Italy).
+
+It was built with ThreeJS and it explains 7 concepts that we explored with Banca d'Italia during our PCTO.
 
 ## Usage
 
