@@ -126,6 +126,10 @@ canvas {
 
 /* MOBILE */
 @media (max-width: 1000px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
 #subtitle, #toc {
   background-color: transparent;
 }
