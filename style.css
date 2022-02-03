@@ -33,7 +33,7 @@ main {
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;
+  padding: 30vw 0px;
 
   
   display: grid;
@@ -100,3 +100,96 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+
+
+/* MOBILE */
+@media (max-width: 1000px) {
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  :root {
+    --dark-bg: #0000008c;
+    --spacing: 350px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  main {
+    width: 100%;
+    color: #dadad9;
+    z-index: 99;
+    /* margin: 0px auto; */
+    /* padding: 120px 0px; */
+    display: inline;
+  }
+
+  a {
+    color: #729D9E;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    font-style: italic;
+  }
+
+  h2, h3, blockquote {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+
+    header {
+      background: var(--dark-bg);
+      font-size: 2.5rem;
+      padding: 2rem;
+      margin-bottom: var(--spacing);
+    }
+
+    section {
+      padding: 1rem;
+      background: var(--dark-bg);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 0;
+      margin-bottom: var(--spacing);
+    }
+
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+    }
+
+} 
