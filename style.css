@@ -123,6 +123,9 @@ canvas {
     grid-column: 6 / 12;
   }
 
+#videos {
+  display: flex;
+}
 
 /* MOBILE */
 @media (max-width: 1000px) {
