@@ -125,10 +125,14 @@ canvas {
 
 #videos {
   display: flex;
+  flex-direction: row;
 }
 
 /* MOBILE */
 @media (max-width: 1000px) {
+  #videos {
+    flex-direction: column;
+  }
 
   html {
     scroll-behavior: smooth;
